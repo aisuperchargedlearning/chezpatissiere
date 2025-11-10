@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Enable smooth scrolling */
+html { 
+  scroll-behavior: smooth; 
+}
+
+/* Set header height for scroll offset */
+:root { 
+  --header-height: 112px; 
+}
+
+/* Give sections scroll margin so they don't hide under the header */
+section[id] { 
+  scroll-margin-top: var(--header-height); 
+}
